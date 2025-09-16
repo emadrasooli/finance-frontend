@@ -85,7 +85,7 @@ export function CreateTransactionModal({
             <div className="flex gap-2 mt-2">
               <Button
                 type="button"
-                className="text-white"
+                className="dark:text-white light:text-black"
                 variant={type === "deposit" ? "default" : "outline"}
                 onClick={() => setType("deposit")}
               >
@@ -93,7 +93,7 @@ export function CreateTransactionModal({
               </Button>
               <Button
                 type="button"
-                className="text-white"
+                className="dark:text-white light:text-black"
                 variant={type === "withdraw" ? "default" : "outline"}
                 onClick={() => setType("withdraw")}
               >

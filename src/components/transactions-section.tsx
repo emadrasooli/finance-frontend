@@ -48,14 +48,14 @@ export function TransactionSection() {
                 <div className="flex items-center gap-3">
                   <div>
                     {transaction.type === "withdraw" ? (
-                      <IconDownload
-                        size={52}
-                        className="bg-primary/20 text-primary rounded-full p-2"
-                      />
-                    ) : (
                       <IconUpload
                         size={52}
                         className="bg-destructive/20 text-destructive rounded-full p-2"
+                      />
+                    ) : (
+                      <IconDownload
+                        size={52}
+                        className="bg-primary/20 text-primary rounded-full p-2"
                       />
                     )}
                   </div>
